@@ -1,0 +1,272 @@
+/* задаем цвет фона для контейнера nav. */
+			nav {
+			    margin: 0px 0;
+			    background-color: #4c474d;
+			}
+			
+			body
+			{				
+				background-image: url(back.jpg);
+				
+				min-height: 100vh;
+
+				background-attachment: fixed;
+				background-size: cover;
+				
+			}
+            .leftfoto 
+			{
+				float:left;
+				margin: 4px 10px 2px 0px;
+			}
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+				z-index: 10;
+			    }
+			
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    background-color: #4c474d;
+			    }
+			
+			 #L1 {
+			    margin: 0px -7px 0px 0px;
+			    display:inline-block;
+			    background-color: #4c474d;
+			    }
+			
+			/* стилизуем ссылки */
+			nav a {
+			    display:block;
+			    padding:0 10px;
+			    color:#FFF;
+			    font-size:20px;
+			    line-height: 60px;
+			    text-decoration:none;
+			}
+			
+			/* изменяем цвет фона при наведении курсора */
+			nav a:hover {
+			    background-color: #d16613;
+		}
+		
+		/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+			nav ul ul {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+			}
+			
+			/* отображаем выпадающий список при наведении */
+			nav ul li:hover > ul {
+			    display:inherit;
+			}
+			
+			/* первый уровень выпадающего списка */
+			nav ul ul li {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}
+			
+			#logo 
+			{
+				position: relative;
+				left: 1%;	
+				top: 1%;
+			}
+			
+			#p1 
+			{
+				top:30px;
+			}
+			li > a:after { content:  ' +'; }
+			li > a:only-child:after { content: ''; }
+			
+			.video 
+			{ 
+			position: relative; 
+			width: 70%;
+			left: 25%;
+			top: 30px;
+			}
+			.content
+			{
+				background-color:#2a2522;
+				opacity: 0.7;
+				width: 79%;
+				position: relative;
+				z-index: 5;
+				top: 13px;
+				padding:20px;
+
+			}
+ 
+			.content h2
+			{
+				font: 30px Verdana, Arial, Helvetica, sans-serif;
+				color:#d9d9d9;
+				text-align:center;
+			}
+ 
+			.content p
+			{
+				font: 17px Verdana, Arial, Helvetica, sans-serif;
+				color:#d9d9d9;
+				text-indent:20px;
+			}
+			
+			.content1
+			{
+				background-color:#2a2522;
+				width: 13%;					
+				position: absolute;
+				top: 80px;
+				left:82%;
+				
+				padding:20px;
+
+			}
+			
+			.content1 p
+			{
+				font: 14px Verdana, Arial, Helvetica, sans-serif;
+				color:#d9d9d9;
+				text-indent:20px;
+			}
+			
+			.footer
+			{
+			width:100%;
+			text-align:center;
+			margin-top:80px;
+			}
+			.footer p
+			{
+			font: 14px Verdana, Arial, Helvetica, sans-serif;
+			color:#d9d9d9;			
+			}	
+
+			.table_dark {
+		      position: relative;
+			  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+			  font-size: 14px;
+			  width: 49%;
+			  text-align: left;
+			  border-collapse: collapse;
+			  background: #252F48;
+			  left: 25%;
+			  top: 20px;
+			}
+			.table_dark th {
+			  color: #EDB749;
+			  border-bottom: 1px solid #37B5A5;
+			  padding: 12px 17px;
+			}
+			.table_dark td {
+			  color: #CAD4D6;
+			  border-bottom: 1px solid #37B5A5;
+			  border-right:1px solid #37B5A5;
+			  padding: 7px 17px;
+			}
+			.table_dark tr:last-child td {
+			  border-bottom: none;
+			}
+			.table_dark td:last-child {
+			  border-right: none;
+			}
+			.table_dark tr:hover td {
+			  text-decoration: underline;
+			}
+			
+			@media screen and (max-width: 720px) {
+															
+				.content
+			{
+				background-color:#2a2522;
+				opacity: 0.7;
+				width: 90%;
+				position: relative;
+				z-index: 5;
+				top: 13px;
+				padding:20px;
+
+			}
+ 
+			.content h2
+			{
+				font: 30px Verdana, Arial, Helvetica, sans-serif;
+				color:#d9d9d9;
+				text-align:center;
+			}
+ 
+			.content p
+			{
+				font: 17px Verdana, Arial, Helvetica, sans-serif;
+				color:#d9d9d9;
+				text-indent:20px;
+			}
+				
+				.content1
+			{
+				background-color:#2a2522;
+				width: 60%;					
+				position: relative;
+				top: 30px;
+				left: 80px;
+				
+				padding:20px;
+
+			}
+			
+			.content1 p
+			{
+				font: 14px Verdana, Arial, Helvetica, sans-serif;
+				color:#d9d9d9;
+				text-indent:20px;
+			}
+			
+			.table_dark {
+		      position: relative;
+			  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+			  font-size: 14px;
+			  width: 49%;
+			  text-align: left;
+			  border-collapse: collapse;
+			  background: #252F48;
+			  left: 0;
+			  top: 20px;
+			}
+			.table_dark th {
+			  color: #EDB749;
+			  border-bottom: 1px solid #37B5A5;
+			  padding: 12px 17px;
+			}
+			.table_dark td {
+			  color: #CAD4D6;
+			  border-bottom: 1px solid #37B5A5;
+			  border-right:1px solid #37B5A5;
+			  padding: 7px 17px;
+			}
+			.table_dark tr:last-child td {
+			  border-bottom: none;
+			}
+			.table_dark td:last-child {
+			  border-right: none;
+			}
+			.table_dark tr:hover td {
+			  text-decoration: underline;
+			}
+				
+			}
